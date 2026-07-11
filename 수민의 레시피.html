@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>수민의 레시피북</title>
+<style>
+body{font-family:Arial,sans-serif;max-width:900px;margin:auto;padding:20px;background:#fafafa}
+h1{color:#d35400}
+input{width:100%;padding:10px;margin:15px 0}
+details{background:white;border:1px solid #ddd;border-radius:8px;padding:10px;margin:8px 0}
+summary{font-weight:bold;cursor:pointer}
+.category{margin-top:25px}
+</style>
+<script>
+function searchRecipe(){
+ let q=document.getElementById('search').value.toLowerCase();
+ document.querySelectorAll('details').forEach(d=>{
+   d.style.display=d.querySelector('summary').innerText.toLowerCase().includes(q)?'block':'none';
+ });
+}
+</script>
+</head>
+<body>
+<h1>🍳 수민의 레시피북</h1>
+<input id="search" onkeyup="searchRecipe()" placeholder="레시피 검색"/>
+<div class="category"><h2>🥗 반찬</h2>
+<details><summary>미나리무침</summary><p><b>재료</b><br/>미나리, 다진마늘, 참치액, 고춧가루, 식초, 스테비아, 참기름, 깨<br/><b>방법</b><br/>미나리를 생으로 무쳐 바로 먹는다.</p></details><details><summary>감자조림</summary><p>재료: 감자3개, 간장3T, 다진마늘0.5T, 물200ml, 올리고당1T.<br/>감자를 볶고 양념과 물을 넣어 10분 졸인 뒤 올리고당, 참기름, 깨로 마무리.</p></details><details><summary>상추겉절이</summary><p>상추, 양파에 고춧가루1.5T, 간장1.5T, 식초1T, 스테비아, 마늘, 참기름을 먹기 직전 버무린다.</p></details><details><summary>부추무침</summary><p>부추, 양파에 간장2T, 식초1.5T, 고춧가루1.5T, 스테비아, 마늘, 참기름, 깨를 넣고 살살 무친다.</p></details><details><summary>콩나물무침</summary><p>콩나물300g을 3~4분 삶아 소금, 마늘, 참기름, 깨, 대파로 무친다.</p></details><details><summary>팽이버섯찜</summary><p>팽이버섯 1팩 데친 뒤 식용유2T, 마늘1T, 간장3T, 설탕 약간, 파를 끓여 부어 깨를 뿌린다.</p></details><details><summary>진미채볶음</summary><p>진미채200g, 고추장2T, 고춧가루1T, 간장1T, 올리고당2T, 마늘1T. 양념을 끓인 뒤 불 끄고 버무려 마요1T, 참기름, 깨 추가.</p></details><details><summary>두부조림</summary><p>두부1kg, 간장8T, 고춧가루4T, 물300ml, 마늘2T, 참치액1T. 두부를 굽고 양념 넣어 10~15분 조린다.</p></details><details><summary>케첩소세지야채볶음</summary><p>소시지200g, 케첩3T, 간장1T, 설탕1T, 마늘1t. 소시지와 채소를 볶아 양념에 볶는다.</p></details><details><summary>대파김치</summary><p>참치액으로 20~30분 절인 뒤 고춧가루, 찹쌀풀, 마늘, 양파갈이로 버무려 숙성.</p></details><details><summary>쪽파김치</summary><p>참치액으로 절인 후 고춧가루, 찹쌀풀, 마늘, 양파갈이 양념으로 버무린다.</p></details><details><summary>오이김치</summary><p>매실청 없이 찹쌀풀 사용. 오이 절인 뒤 참치액, 고춧가루, 마늘, 찹쌀풀 양념을 채워 숙성.</p></details><details><summary>깍두기</summary><p>무2kg 절임 후 고춧가루8T, 참치액4T, 새우젓2T, 찹쌀풀4T, 마늘2T 양념으로 버무려 숙성.</p></details></div>
+<div class="category"><h2>🍲 국·찌개</h2>
+
+
+
+<details><summary>김치수제비</summary><p>반죽: 밀가루2컵, 소금0.5t, 물2/3컵. 육수1.5L에 신김치1컵, 김치국물2T, 마늘1T, 고춧가루1T, 국간장1T, 참치액1T를 넣고 끓인 뒤 반죽을 얇게 뜯어 3~4분 끓인다.</p></details><details><summary>미역냉국</summary><p>물500ml, 불린미역20g, 오이1/3개. 국간장1T, 참치액1T, 현미식초2T, 스테비아1/4t, 미원1/4t, 꽃소금1/4t. 30분 이상 차게 숙성.</p></details><details><summary>경상도식 소고기무국</summary><p>소고기300g을 참기름에 볶고 고춧가루3T를 볶은 뒤 무500g, 물2L를 넣어 20분 끓인다. 국간장3T, 마늘1T, 참치액1T로 간.</p></details><details><summary>콩나물 소고기무국</summary><p>소고기200g과 무를 볶은 뒤 물1.5L, 콩나물200g, 마늘1T를 넣고 10분 끓인다. 국간장2T, 참치액1T.</p></details><details><summary>전기밥솥 삼계탕</summary><p>닭1마리, 물700~900ml. 일반 백미 취사 1회(40~50분). 필요시 보온10~15분.</p></details><details><summary>전기밥솥 구운계란</summary><p>계란10개, 물200ml, 소금1T, 식초1T. 일반취사 1~2회, 뜸20분.</p></details></div>
+<div class="category"><h2>🍖 메인요리</h2>
+<details><summary>참치마요</summary><p>참치+마요네즈를 섞어 밥과 함께.</p></details>
+<details><summary>햄치즈 밥버거</summary><p>밥, 햄, 치즈를 겹쳐 구운다.</p></details>
+</div>
+<div class="category"><h2>🍜 면요리</h2>
+<details><summary>들기름 막국수</summary><p>삶은 면에 들기름, 간장, 김가루를 비빈다.</p></details>
+</div>
+<div class="category"><h2>🍞 베이킹</h2>
+<details><summary>롤치즈빵</summary><p>반죽에 롤치즈를 넣어 굽는다.</p></details>
+</div>
+<p style="margin-top:30px;color:#666">앞으로 레시피를 추가하면서 계속 업데이트하세요.</p>
+</body>
+</html>
